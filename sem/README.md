@@ -8,15 +8,17 @@ Sem is a UI library for modifying an on-screen element with profound ease. Acces
 
 Expects one parameter: the id of the target element. Returns an object with multiple getters, setters, properties and methods associated with the element's content, design and layout. This includes element text, value, and design-associated properties like background-color, border, font-size and more.
 
-List of properties:
+Types of properties:
+- [Content related](#content-related)
+- 
 
 ### Content-related
 
-```[String] element.elt```
+```element.elt [String]```
 
 &emsp;Returns element id. Only getter.
 
-```[String] element.text```
+```element.text [String]```
 
 &emsp;Returns element text content. Uses ```getText()``` internally.
 
@@ -24,7 +26,7 @@ List of properties:
 
 &emsp;Sets element text content. Uses ```setText()``` internally.
 
-```[Number] element.num```
+```element.num [Number]```
 
 &emsp;Returns a numeric value held by the element (for sliders etc.) Uses ```getNumber()``` internally.
 
@@ -32,7 +34,7 @@ List of properties:
 
 &emsp;Sets element's numeric value. Uses ```setNumber()``` internally.
 
-```[String] element.placeholder```
+```element.placeholder [String]```
 
 &emsp;Returns placeholder value of input element. Uses ```getProperty()``` internally.
 
@@ -42,7 +44,7 @@ List of properties:
 
 ### Text and font-related
 
-```[Number] element.fontSize```
+```element.fontSize [Number]```
 
 &emsp;Returns element font-size. Uses ```getProperty()``` internally.
 
@@ -50,7 +52,7 @@ List of properties:
 
 &emsp;Sets element font-size. uses ```setProperty()``` internally
 
-```[String] element.fontFamily```
+```element.fontFamily [String]```
 
 &emsp;Returns element font-family. Uses ```getProperty()``` internally.
 
@@ -58,7 +60,7 @@ List of properties:
 
 &emsp;Sets element font-family. uses ```setProperty()``` internally
 
-```[String] element.textColor```
+```element.textColor [String]```
 
 &emsp;Returns element text-color in rgb format. Uses ```getProperty()``` internally.
 
@@ -74,7 +76,7 @@ List of properties:
 
 ### Background and border-related
 
-```[String] element.backgroundColor```
+```element.backgroundColor [String]```
 
 &emsp;Returns element background-color in rgb format. Uses ```getProperty()``` internally.
 
@@ -84,7 +86,7 @@ List of properties:
 
 ### Image-related
 
-```[String] element.image```
+```element.image [String]```
 
 &emsp;Returns image url/source of image element. Uses ```getProperty()``` internally.
 
@@ -92,7 +94,7 @@ List of properties:
 
 &emsp;Sets image element's image source. uses ```setProperty()``` internally
 
-```["fill" || "cover" || "contain" || "none"] element.fit```
+```element.fit ["fill" || "cover" || "contain" || "none"]```
 
 &emsp;Returns image fit type. Uses ```getProperty()``` internally.
 
