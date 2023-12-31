@@ -65,3 +65,37 @@ List of properties:
 ```element.textColor = [String || rgb(red,green,blue)]```
 
 &emsp;Sets element text-color. uses ```setProperty()``` internally
+
+### Visibility-related
+
+```element.delete()```
+
+&emsp;Removes element from the document. uses ```deleteElement()``` internally
+
+### Background and border-related
+
+```[String] element.backgroundColor```
+
+&emsp;Returns element background-color in rgb format. Uses ```getProperty()``` internally.
+
+```element.backgroundColor = [String || rgb(red,green,blue)]```
+
+&emsp;Sets element background-color. uses ```setProperty()``` internally
+
+### Image-related
+
+```[String] element.image```
+
+&emsp;Returns image url/source of image element. Uses ```getProperty()``` internally.
+
+```element.image = [String]```
+
+&emsp;Sets image element's image source. uses ```setProperty()``` internally
+
+```["fill" || "cover" || "contain" || "none"] element.fit```
+
+&emsp;Returns image fit type. Uses ```getProperty()``` internally.
+
+```element.fit = ["fill" || "cover" || "contain" || "none"]```
+
+&emsp;Sets image fit type. uses ```setProperty()``` internally
