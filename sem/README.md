@@ -10,25 +10,50 @@ Expects one parameter: the id of the target element. Returns an object with mult
 
 List of properties:
 
-### Element content
+### Content-related
 
 ```element.elt```
-Returns element id. Only getter.
+
+&emsp;Returns element id. Only getter.
 
 ```element.text```
-Returns element text content. Uses ```getText()``` internally.
 
-```element.text = "some text here"```
-Sets element text content. Uses ```setText()``` internally.
+&emsp;Returns element text content. Uses ```getText()``` internally.
+
+```element.text = [String]```
+
+&emsp;Sets element text content. Uses ```setText()``` internally.
 
 ```element.num```
-Returns a numeric value held by the element (for sliders etc.)
 
-```element.num = 5```
-Sets element's numeric value.
+&emsp;Returns a numeric value held by the element (for sliders etc.) Uses ```getNumber()``` internally.
+
+```element.num = [Number]```
+
+&emsp;Sets element's numeric value. Uses ```setNumber()``` internally.
 
 ```element.placeholder```
-Returns placeholder value of input element.
 
-```element.placeholder = "some text here"```
-Sets placeholder value of input element.
+&emsp;Returns placeholder value of input element. Uses ```getProperty()``` internally.
+
+```element.placeholder = [String]```
+
+&emsp;Sets placeholder value of input element. uses ```setProperty()``` internally
+
+### Text-related
+
+```element.fontSize```
+
+&emsp;Returns element font-size. Uses ```getProperty()``` internally.
+
+```element.fontSize = [Number]```
+
+&emsp;Sets element font-size. uses ```setProperty()``` internally
+
+```element.fontFamily```
+
+&emsp;Returns element font-family. Uses ```getProperty()``` internally.
+
+```element.fontFamily = [String]```
+
+&emsp;Sets element font-family. uses ```setProperty()``` internally
