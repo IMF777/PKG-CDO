@@ -1,6 +1,6 @@
 # Sem
 
-Sem is a UI library for modifying an on-screen element with profound ease. Access or modify elements as if they were JavaScript objects. Sem includes two main functions: ```$``` and ```Template```.
+Sem is a UI library for modifying on-screen elements with profound ease. Access or modify elements as if they were JavaScript objects. Sem includes two main functions: ```$``` and ```Template```.
 
 ## ```$[function:Function]```
 
@@ -16,6 +16,7 @@ Types of properties:
 - [Background and border](#background-and-border)
 - [Image](#image)
 - [Size and position](#size-and-position)
+- [Slider properties](#slider-properties)
 
 ### Content
 
@@ -80,11 +81,28 @@ Types of properties:
 
 &emsp;Sets element text-color. uses ```setProperty()``` internally
 
+```element.textAlign```
+```["left" || "right" || "center" || "justify"]```
+
+&emsp;Returns element text-align in rgb format. Uses ```getProperty()``` internally.
+
+```element.textAlign = ["left" || "right" || "center" || "justify"]```
+
+&emsp;Sets element text-align. uses ```setProperty()``` internally
+
 ### Visibility
 
 ```element.delete()```
+&emsp;Removes element from HTML document. Uses ```deleteElement()``` internally
 
-&emsp;Removes element from the document. uses ```deleteElement()``` internally
+```element.hidden```
+```[Boolean]```
+
+&emsp;Returns true if the element is hidden from view, else returns false. Uses ```getProperty()``` internally.
+
+```element.hidden = [Boolean]```
+
+&emsp;Sets element hidden property. uses ```setProperty()``` internally
 
 ### Background and border-related
 
@@ -174,11 +192,11 @@ Types of properties:
 &emsp;Sets width of element. uses ```setProperty()``` internally
 
 ```element.size```
-```[Array]```
+```[Array:[Number,Number]]```
 
 &emsp;Returns array containing height and width values respectively. Uses ```getProperty()``` internally.
 
-```element.size = [Array]```
+```element.size = [Array:[Number,Number]]```
 
 &emsp;Sets element height to array item 0 and width to array item 1. uses ```setProperty()``` internally
 
@@ -201,10 +219,86 @@ Types of properties:
 &emsp;Sets y position of element. uses ```setProperty()``` internally
 
 ```element.position```
-```[Array]```
+```[Array:[Number,Number]]```
 
 &emsp;Returns array containing x and y position values respectively. Uses ```getProperty()``` internally.
 
-```element.position = [Array]```
+```element.position = [Array:[Number,Number]]```
 
 &emsp;Sets element x position to array item 0 and y position to array item 1. uses ```setProperty()``` internally
+
+### Slider properties
+
+```element.value```
+```[Number]```
+
+&emsp;Returns current numeric value of slider. Uses ```getProperty()``` internally.
+
+```element.value = [Number]```
+
+&emsp;Sets numeric value of slider. uses ```setProperty()``` internally
+
+```element.min```
+```[Number]```
+
+&emsp;Returns min value of slider. Uses ```getProperty()``` internally.
+
+```element.min = [Number]```
+
+&emsp;Sets min of slider. uses ```setProperty()``` internally
+
+```element.max```
+```[Number]```
+
+&emsp;Returns max value of slider. Uses ```getProperty()``` internally.
+
+```element.max = [Array]```
+
+&emsp;Sets max value of slider. uses ```setProperty()``` internally
+
+```element.range```
+```[Array:[Number,Number]]```
+
+&emsp;Returns array containing slider min and max values respectively. Uses ```getProperty()``` internally.
+
+```element.range = [Array:[Number,Number]]```
+
+&emsp;Sets slider min to array item 0 and max to array item 1. uses ```setProperty()``` internally
+
+```element.step```
+```[Number]```
+
+&emsp;Returns step property of slider. Uses ```getProperty()``` internally.
+
+```element.step = [Number]```
+
+&emsp;Sets step property of slider. uses ```setProperty()``` internally
+
+### Select elements
+
+```element.groupId```
+```[String]```
+
+&emsp;Returns group-id of radio button. Uses ```getProperty()``` internally.
+
+```element.groupId = [Number]```
+
+&emsp;Sets group-id of radio button. uses ```setProperty()``` internally
+
+```element.checked```
+```[Boolean]```
+
+&emsp;Returns Boolean indicating status of radio button or checkbox. Uses ```getProperty()``` internally.
+
+```element.checked = [Boolean]```
+
+&emsp;Sets checked property of radio button or checkbox. uses ```setProperty()``` internally
+
+```element.options```
+```[Array:String[]]```
+
+&emsp;Returns array containing options inside a dropdown. Uses ```getProperty()``` internally.
+
+```element.options = [Array:String[]]```
+
+&emsp;Sets options property of dropdown. uses ```setProperty()``` internally
