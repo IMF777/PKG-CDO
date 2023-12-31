@@ -603,7 +603,7 @@
 						0 < e ? (r += l.speedX, l.x += l.speedX, e <= r && (stopTimedLoop(o), t && t())) : (r -= l.speedX, l.x -= l.speedX, r <= e && (stopTimedLoop(o), t && t()))
 					})
 			},
-			velocityY: function (e, t)
+			velocityY: function(e, t)
 			{
 				var r = 0,
 					o = timedLoop(l.rateY, function ()
