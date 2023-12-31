@@ -12,11 +12,11 @@ List of properties:
 
 ### Content-related
 
-```element.elt```
+```[String] element.elt```
 
 &emsp;Returns element id. Only getter.
 
-```element.text```
+```[String] element.text```
 
 &emsp;Returns element text content. Uses ```getText()``` internally.
 
@@ -24,7 +24,7 @@ List of properties:
 
 &emsp;Sets element text content. Uses ```setText()``` internally.
 
-```element.num```
+```[Number] element.num```
 
 &emsp;Returns a numeric value held by the element (for sliders etc.) Uses ```getNumber()``` internally.
 
@@ -32,7 +32,7 @@ List of properties:
 
 &emsp;Sets element's numeric value. Uses ```setNumber()``` internally.
 
-```element.placeholder```
+```[String] element.placeholder```
 
 &emsp;Returns placeholder value of input element. Uses ```getProperty()``` internally.
 
@@ -40,9 +40,9 @@ List of properties:
 
 &emsp;Sets placeholder value of input element. uses ```setProperty()``` internally
 
-### Text-related
+### Text and font-related
 
-```element.fontSize```
+```[Number] element.fontSize```
 
 &emsp;Returns element font-size. Uses ```getProperty()``` internally.
 
@@ -50,10 +50,18 @@ List of properties:
 
 &emsp;Sets element font-size. uses ```setProperty()``` internally
 
-```element.fontFamily```
+```[String] element.fontFamily```
 
 &emsp;Returns element font-family. Uses ```getProperty()``` internally.
 
 ```element.fontFamily = [String]```
 
 &emsp;Sets element font-family. uses ```setProperty()``` internally
+
+```[String] element.textColor```
+
+&emsp;Returns element text-color in rgb format. Uses ```getProperty()``` internally.
+
+```element.textColor = [String || rgb(red,green,blue)]```
+
+&emsp;Sets element text-color. uses ```setProperty()``` internally
