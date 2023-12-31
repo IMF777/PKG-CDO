@@ -5,17 +5,19 @@ Sem is a UI library for modifying an on-screen element with profound ease. Acces
 ## ```$[function:Function]```
 
 ```var element = $(id);```
+```[Object]```
 
 Expects one parameter: the id of the target element. Returns an object with multiple getters, setters, properties and methods associated with the element's content, design and layout. This includes element text, value, and design-associated properties like background-color, border, font-size and more.
 
 Types of properties:
-- [Content related](#content-related)
-- [Text and font related](#text-and-font-related)
-- [Visibility related](#visibility-related)
-- [Background and border related](#background-and-border-related)
-- [Image related](#image-related)
+- [Content](#content)
+- [Text and font](#text-and-font)
+- [Visibility](#visibility)
+- [Background and border](#background-and-border)
+- [Image](#image)
+- [Size and position](#size-and-position)
 
-### Content-related
+### Content
 
 ```element.elt```
 ```[String]```
@@ -49,7 +51,7 @@ Types of properties:
 
 &emsp;Sets placeholder value of input element. uses ```setProperty()``` internally
 
-### Text and font-related
+### Text and font
 
 ```element.fontSize```
 ```[Number]```
@@ -78,7 +80,7 @@ Types of properties:
 
 &emsp;Sets element text-color. uses ```setProperty()``` internally
 
-### Visibility-related
+### Visibility
 
 ```element.delete()```
 
@@ -95,7 +97,34 @@ Types of properties:
 
 &emsp;Sets element background-color. uses ```setProperty()``` internally
 
-### Image-related
+```element.borderColor```
+```[String]```
+
+&emsp;Returns border-color of element. Uses ```getProperty()``` internally.
+
+```element.borderColor = [String]```
+
+&emsp;Sets border-color of element. uses ```setProperty()``` internally
+
+```element.borderRadius```
+```[Number]```
+
+&emsp;Returns border-radius of element. Uses ```getProperty()``` internally.
+
+```element.borderRadius = [Number]```
+
+&emsp;Sets border-radius of element. uses ```setProperty()``` internally
+
+```element.borderWidth```
+```[Number]```
+
+&emsp;Returns border-width of element. Uses ```getProperty()``` internally.
+
+```element.borderWidth = [Number]```
+
+&emsp;Sets border-color of element. uses ```setProperty()``` internally
+
+### Image
 
 ```element.image```
 ```[String]```
@@ -114,3 +143,68 @@ Types of properties:
 ```element.fit = ["fill" || "cover" || "contain" || "none"]```
 
 &emsp;Sets image fit type. uses ```setProperty()``` internally
+
+```element.iconColor```
+```[String]```
+
+&emsp;Returns icon color if image element contains an icon. Uses ```getProperty()``` internally.
+
+```element.iconColor = [String]```
+
+&emsp;Sets image element's icon color. uses ```setProperty()``` internally
+
+### Size and position
+
+```element.height```
+```[Number]```
+
+&emsp;Returns height of element. Uses ```getProperty()``` internally.
+
+```element.height = [Number]```
+
+&emsp;Sets height of element. uses ```setProperty()``` internally
+
+```element.width```
+```[Number]```
+
+&emsp;Returns width of element. Uses ```getProperty()``` internally.
+
+```element.width = [Number]```
+
+&emsp;Sets width of element. uses ```setProperty()``` internally
+
+```element.size```
+```[Array]```
+
+&emsp;Returns array containing height and width values respectively. Uses ```getProperty()``` internally.
+
+```element.size = [Array]```
+
+&emsp;Sets element height to array item 0 and width to array item 1. uses ```setProperty()``` internally
+
+```element.x```
+```[Number]```
+
+&emsp;Returns x position of element. Uses ```getProperty()``` internally.
+
+```element.x = [Number]```
+
+&emsp;Sets x position of element. uses ```setProperty()``` internally
+
+```element.y```
+```[Number]```
+
+&emsp;Returns y position of element. Uses ```getProperty()``` internally.
+
+```element.y = [Number]```
+
+&emsp;Sets y position of element. uses ```setProperty()``` internally
+
+```element.position```
+```[Array]```
+
+&emsp;Returns array containing x and y position values respectively. Uses ```getProperty()``` internally.
+
+```element.position = [Array]```
+
+&emsp;Sets element x position to array item 0 and y position to array item 1. uses ```setProperty()``` internally
