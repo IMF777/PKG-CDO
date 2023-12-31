@@ -10,12 +10,25 @@ Expects one parameter: the id of the target element. Returns an object with mult
 
 List of properties:
 
-### Content-Associated
+### Element content
+
+```element.elt```
+Returns element id. Only getter.
 
 ```element.text```
-Returns the element's text content
+Returns element text content. Uses ```getText()``` internally.
 
 ```element.text = "some text here"```
-Sets the element's text content
+Sets element text content. Uses ```setText()``` internally.
 
-``````
+```element.num```
+Returns a numeric value held by the element (for sliders etc.)
+
+```element.num = 5```
+Sets element's numeric value.
+
+```element.placeholder```
+Returns placeholder value of input element.
+
+```element.placeholder = "some text here"```
+Sets placeholder value of input element.
