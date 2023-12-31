@@ -17,11 +17,13 @@ Types of properties:
 
 ### Content-related
 
-```element.elt [String]```
+```element.elt```
+```[String]```
 
 &emsp;Returns element id. Only getter.
 
-```element.text [String]```
+```element.text```
+```[String]```
 
 &emsp;Returns element text content. Uses ```getText()``` internally.
 
@@ -29,7 +31,8 @@ Types of properties:
 
 &emsp;Sets element text content. Uses ```setText()``` internally.
 
-```element.num [Number]```
+```element.num```
+```[Number]```
 
 &emsp;Returns a numeric value held by the element (for sliders etc.) Uses ```getNumber()``` internally.
 
@@ -37,7 +40,8 @@ Types of properties:
 
 &emsp;Sets element's numeric value. Uses ```setNumber()``` internally.
 
-```element.placeholder [String]```
+```element.placeholder```
+```[String]```
 
 &emsp;Returns placeholder value of input element. Uses ```getProperty()``` internally.
 
@@ -47,7 +51,8 @@ Types of properties:
 
 ### Text and font-related
 
-```element.fontSize [Number]```
+```element.fontSize```
+```[Number]```
 
 &emsp;Returns element font-size. Uses ```getProperty()``` internally.
 
@@ -55,7 +60,8 @@ Types of properties:
 
 &emsp;Sets element font-size. uses ```setProperty()``` internally
 
-```element.fontFamily [String]```
+```element.fontFamily```
+```[String]```
 
 &emsp;Returns element font-family. Uses ```getProperty()``` internally.
 
@@ -63,7 +69,8 @@ Types of properties:
 
 &emsp;Sets element font-family. uses ```setProperty()``` internally
 
-```element.textColor [String]```
+```element.textColor```
+```[String]```
 
 &emsp;Returns element text-color in rgb format. Uses ```getProperty()``` internally.
 
@@ -79,7 +86,8 @@ Types of properties:
 
 ### Background and border-related
 
-```element.backgroundColor [String]```
+```element.backgroundColor```
+```[String]```
 
 &emsp;Returns element background-color in rgb format. Uses ```getProperty()``` internally.
 
@@ -89,7 +97,8 @@ Types of properties:
 
 ### Image-related
 
-```element.image [String]```
+```element.image```
+```[String]```
 
 &emsp;Returns image url/source of image element. Uses ```getProperty()``` internally.
 
@@ -97,7 +106,8 @@ Types of properties:
 
 &emsp;Sets image element's image source. uses ```setProperty()``` internally
 
-```element.fit ["fill" || "cover" || "contain" || "none"]```
+```element.fit```
+```["fill" || "cover" || "contain" || "none"]```
 
 &emsp;Returns image fit type. Uses ```getProperty()``` internally.
 
