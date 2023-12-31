@@ -52,6 +52,15 @@ Types of properties:
 
 &emsp;Sets placeholder value of input element. uses ```setProperty()``` internally
 
+```element.readonly```
+```[Boolean]```
+
+&emsp;Returns Boolean indicating whether textarea is readonly or not. Uses ```getProperty()``` internally.
+
+```element.readonly = [String]```
+
+&emsp;Sets readonly property of textarea. uses ```setProperty()``` internally
+
 ### Text and font
 
 ```element.fontSize```
@@ -281,7 +290,7 @@ Types of properties:
 
 &emsp;Returns group-id of radio button. Uses ```getProperty()``` internally.
 
-```element.groupId = [Number]```
+```element.groupId = [String]```
 
 &emsp;Sets group-id of radio button. uses ```setProperty()``` internally
 
@@ -302,3 +311,30 @@ Types of properties:
 ```element.options = [Array:String[]]```
 
 &emsp;Sets options property of dropdown. uses ```setProperty()``` internally
+
+```element.index```
+```[Number]```
+
+&emsp;Returns dropdown index. Uses ```getProperty()``` internally.
+
+```element.index = [Number]```
+
+&emsp;Sets dropdown index. uses ```setProperty()``` internally
+
+### HTML and CSS
+
+```element.html = [String]```
+
+&emsp;Sets element's innerHTML to provided string. uses ```innerHTML()``` internally
+
+```element.CSS = [String]```
+
+&emsp;Sets CSS styling of element to provided string. uses ```setStyle()``` internally
+
+```element.parent = [String]```
+
+&emsp;Appends element to the element with the matching id. uses ```setParent()``` internally
+
+```element.children = [String]```
+
+&emsp;Appends element with the matching id to the element. uses ```setParent()``` internally
