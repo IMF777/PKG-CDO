@@ -10,7 +10,10 @@ Expects one parameter: the id of the target element. Returns an object with mult
 
 Types of properties:
 - [Content related](#content-related)
-- 
+- [Text and font related](#text-and-font-related)
+- [Visibility related](#visibility-related)
+- [Background and border related](#background-and-border-related)
+- [Image related](#image-related)
 
 ### Content-related
 
