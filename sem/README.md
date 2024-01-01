@@ -41,7 +41,7 @@ Types of properties:
 
 #### ```element.num = [Number]```
 
-&emsp;Sets element's numeric value. Uses ```setNumber()```[↗](https://studio.code.org/docs/ide/applab/expressions/getNumber) internally.
+&emsp;Sets element's numeric value. Uses ```setNumber()```[↗](https://studio.code.org/docs/ide/applab/expressions/setNumber) internally.
 
 #### ```element.placeholder``` ```[String]```
 
@@ -49,7 +49,7 @@ Types of properties:
 
 #### ```element.placeholder = [String]```
 
-&emsp;Sets placeholder value of input element. Uses ```setProperty()``` internally
+&emsp;Sets placeholder value of input element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.readonly``` ```[Boolean]```
 
@@ -57,7 +57,7 @@ Types of properties:
 
 #### ```element.readonly = [String]```
 
-&emsp;Sets readonly property of textarea. Uses ```setProperty()``` internally
+&emsp;Sets readonly property of textarea. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### Text and font
 
@@ -67,7 +67,7 @@ Types of properties:
 
 #### ```element.fontSize = [Number]```
 
-&emsp;Sets element font-size. Uses ```setProperty()``` internally
+&emsp;Sets element font-size. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.fontFamily``` ```[String]```
 
@@ -75,7 +75,7 @@ Types of properties:
 
 #### ```element.fontFamily = [String]```
 
-&emsp;Sets element font-family. Uses ```setProperty()``` internally
+&emsp;Sets element font-family. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.textColor``` ```[String]```
 
@@ -83,7 +83,7 @@ Types of properties:
 
 #### ```element.textColor = [String || rgb(red,green,blue)]```
 
-&emsp;Sets element text-color. Uses ```setProperty()``` internally
+&emsp;Sets element text-color. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.textAlign``` ```["left" || "right" || "center" || "justify"]```
 
@@ -91,12 +91,12 @@ Types of properties:
 
 #### ```element.textAlign = ["left" || "right" || "center" || "justify"]```
 
-&emsp;Sets element text-align. Uses ```setProperty()``` internally
+&emsp;Sets element text-align. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### Visibility
 
 #### ```element.delete()```
-&emsp;Removes element from HTML document. Uses ```deleteElement()``` internally.
+&emsp;Removes element from HTML document. Uses ```deleteElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/deleteElement) internally.
 
 #### ```element.hidden``` ```[Boolean]```
 
@@ -104,15 +104,15 @@ Types of properties:
 
 #### ```element.hidden = [Boolean]```
 
-&emsp;Sets element hidden property. Uses ```setProperty()``` internally
+&emsp;Sets element hidden property. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.hide(Number?)```
 
-&emsp;Temporarily hides element from view, optionally after elapse of [parameter] milliseconds. Uses ```hideElement()``` and ```timedLoop()``` internally.
+&emsp;Temporarily hides element from view, optionally after elapse of [parameter] milliseconds. Uses ```hideElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/hideElement) and ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) internally.
 
 #### ```element.show(Number?)```
 
-&emsp;Brings element back to view, optionally after elapse of [parameter] milliseconds. Uses ```showElement()``` and ```timedLoop()``` internally.
+&emsp;Brings element back to view, optionally after elapse of [parameter] milliseconds. Uses ```showElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/showElement) and ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) internally.
 
 ### Background and border
 
@@ -122,7 +122,7 @@ Types of properties:
 
 #### ```element.backgroundColor = [String || rgb(red,green,blue)]```
 
-&emsp;Sets element background-color. Uses ```setProperty()``` internally
+&emsp;Sets element background-color. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.borderColor``` ```[String]```
 
@@ -130,7 +130,7 @@ Types of properties:
 
 #### ```element.borderColor = [String]```
 
-&emsp;Sets border-color of element. Uses ```setProperty()``` internally
+&emsp;Sets border-color of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.borderRadius``` ```[Number]```
 
@@ -138,7 +138,7 @@ Types of properties:
 
 #### ```element.borderRadius = [Number]```
 
-&emsp;Sets border-radius of element. Uses ```setProperty()``` internally
+&emsp;Sets border-radius of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.borderWidth``` ```[Number]```
 
@@ -146,246 +146,246 @@ Types of properties:
 
 #### ```element.borderWidth = [Number]```
 
-&emsp;Sets border-color of element. Uses ```setProperty()``` internally
+&emsp;Sets border-color of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### Image
 
 #### ```element.image``` ```[String]```
 
-&emsp;Returns image url/source of image element. Uses ```getProperty()``` internally.
+&emsp;Returns image url/source of image element. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.image = [String]```
 
-&emsp;Sets image element's image source. Uses ```setProperty()``` internally
+&emsp;Sets image element's image source. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.fit``` ```["fill" || "cover" || "contain" || "none"]```
 
-&emsp;Returns image fit type. Uses ```getProperty()``` internally.
+&emsp;Returns image fit type. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.fit = ["fill" || "cover" || "contain" || "none"]```
 
-&emsp;Sets image fit type. Uses ```setProperty()``` internally
+&emsp;Sets image fit type. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.iconColor``` ```[String]```
 
-&emsp;Returns icon color if image element contains an icon. Uses ```getProperty()``` internally.
+&emsp;Returns icon color if image element contains an icon. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.iconColor = [String]```
 
-&emsp;Sets image element's icon color. Uses ```setProperty()``` internally
+&emsp;Sets image element's icon color. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### Size and position
 
 #### ```element.height``` ```[Number]```
 
-&emsp;Returns height of element. Uses ```getProperty()``` internally.
+&emsp;Returns height of element. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.height = [Number]```
 
-&emsp;Sets height of element. Uses ```setProperty()``` internally
+&emsp;Sets height of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.width``` ```[Number]```
 
-&emsp;Returns width of element. Uses ```getProperty()``` internally.
+&emsp;Returns width of element. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.width = [Number]```
 
-&emsp;Sets width of element. Uses ```setProperty()``` internally
+&emsp;Sets width of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.size``` ```[Array:[Number,Number]]```
 
-&emsp;Returns array containing height and width values respectively. Uses ```getProperty()``` internally.
+&emsp;Returns array containing height and width values respectively. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.size = [Array:[Number,Number]]```
 
-&emsp;Sets element height to array item 0 and width to array item 1. Uses ```setProperty()``` internally
+&emsp;Sets element height to array item 0 and width to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.x``` ```[Number]```
 
-&emsp;Returns x position of element. Uses ```getProperty()``` internally.
+&emsp;Returns x position of element. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.x = [Number]```
 
-&emsp;Sets x position of element. Uses ```setProperty()``` internally
+&emsp;Sets x position of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.y``` ```[Number]```
 
-&emsp;Returns y position of element. Uses ```getProperty()``` internally.
+&emsp;Returns y position of element. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.y = [Number]```
 
-&emsp;Sets y position of element. Uses ```setProperty()``` internally
+&emsp;Sets y position of element. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.position``` ```[Array:[Number,Number]]```
 
-&emsp;Returns array containing x and y position values respectively. Uses ```getProperty()``` internally.
+&emsp;Returns array containing x and y position values respectively. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.position = [Array:[Number,Number]]```
 
-&emsp;Sets element x position to array item 0 and y position to array item 1. Uses ```setProperty()``` internally
+&emsp;Sets element x position to array item 0 and y position to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### Slider properties
 
 #### ```element.value``` ```[Number]```
 
-&emsp;Returns current numeric value of slider. Uses ```getProperty()``` internally.
+&emsp;Returns current numeric value of slider. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.value = [Number]```
 
-&emsp;Sets numeric value of slider. Uses ```setProperty()``` internally
+&emsp;Sets numeric value of slider. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.min``` ```[Number]```
 
-&emsp;Returns min value of slider. Uses ```getProperty()``` internally.
+&emsp;Returns min value of slider. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.min = [Number]```
 
-&emsp;Sets min of slider. Uses ```setProperty()``` internally
+&emsp;Sets min of slider. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.max``` ```[Number]```
 
-&emsp;Returns max value of slider. Uses ```getProperty()``` internally.
+&emsp;Returns max value of slider. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.max = [Array]```
 
-&emsp;Sets max value of slider. Uses ```setProperty()``` internally
+&emsp;Sets max value of slider. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.range``` ```[Array:[Number,Number]]```
 
-&emsp;Returns array containing slider min and max values respectively. Uses ```getProperty()``` internally.
+&emsp;Returns array containing slider min and max values respectively. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.range = [Array:[Number,Number]]```
 
-&emsp;Sets slider min to array item 0 and max to array item 1. Uses ```setProperty()``` internally
+&emsp;Sets slider min to array item 0 and max to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.step``` ```[Number]```
 
-&emsp;Returns step property of slider. Uses ```getProperty()``` internally.
+&emsp;Returns step property of slider. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.step = [Number]```
 
-&emsp;Sets step property of slider. Uses ```setProperty()``` internally
+&emsp;Sets step property of slider. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### Select elements
 
 #### ```element.groupId``` ```[String]```
 
-&emsp;Returns group-id of radio button. Uses ```getProperty()``` internally.
+&emsp;Returns group-id of radio button. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.groupId = [String]```
 
-&emsp;Sets group-id of radio button. Uses ```setProperty()``` internally
+&emsp;Sets group-id of radio button. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.checked``` ```[Boolean]```
 
-&emsp;Returns Boolean indicating status of radio button or checkbox. Uses ```getProperty()``` internally.
+&emsp;Returns Boolean indicating status of radio button or checkbox. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.checked = [Boolean]```
 
-&emsp;Sets checked property of radio button or checkbox. Uses ```setProperty()``` internally
+&emsp;Sets checked property of radio button or checkbox. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.options``` ```[Array:String[]]```
 
-&emsp;Returns array containing options inside a dropdown. Uses ```getProperty()``` internally.
+&emsp;Returns array containing options inside a dropdown. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.options = [Array:String[]]```
 
-&emsp;Sets options property of dropdown. Uses ```setProperty()``` internally
+&emsp;Sets options property of dropdown. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```element.index``` ```[Number]```
 
-&emsp;Returns dropdown index. Uses ```getProperty()``` internally.
+&emsp;Returns dropdown index. Uses ```getProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/getProperty) internally.
 
 #### ```element.index = [Number]```
 
-&emsp;Sets dropdown index. Uses ```setProperty()``` internally
+&emsp;Sets dropdown index. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 ### HTML and CSS
 
 #### ```element.html = [String]```
 
-&emsp;Sets element's innerHTML to provided string. Uses ```innerHTML()``` internally. Only setter.
+&emsp;Sets element's innerHTML to provided string. Uses ```innerHTML()```[Not documented] internally. Only setter.
 
 #### ```element.CSS = [String]```
 
-&emsp;Sets CSS styling of element to provided string. Uses ```setStyle()``` internally. Only setter.
+&emsp;Sets CSS styling of element to provided string. Uses ```setStyle()```[↗](https://studio.code.org/docs/ide/applab/expressions/setStyle) internally. Only setter.
 
 #### ```element.parent = [String]```
 
-&emsp;Appends element to the element with the matching id. Uses ```setParent()``` internally. Only setter.
+&emsp;Appends element to the element with the matching id. Uses ```setParent()```[Not document] internally. Only setter.
 
 #### ```element.children = [String || Array:String[]]```
 
-&emsp;Appends element with the matching id to element. [>=1.1.0] If argument provided is of type array, loops through array items and appends element with id of each item to element. Uses ```setParent()``` internally. Only setter.
+&emsp;Appends element with the matching id to element. [>=1.1.0] If argument provided is of type array, loops through array items and appends element with id of each item to element. Uses ```setParent()```[Not documented] internally. Only setter.
 
 #### ```element.scrollX = [Boolean]```
 
-&emsp;Enables or disables horizontal scrolling for element. Uses ```setStyle()``` internally. Only setter.
+&emsp;Enables or disables horizontal scrolling for element. Uses ```setStyle()```[↗](https://studio.code.org/docs/ide/applab/expressions/setStyle) internally. Only setter.
 
 #### ```element.scrollY = [Boolean]```
 
-&emsp;Enables or disables vertical scrolling for element. Uses ```setStyle()``` internally. Only setter.
+&emsp;Enables or disables vertical scrolling for element. Uses ```setStyle()```[↗](https://studio.code.org/docs/ide/applab/expressions/setStyle) internally. Only setter.
 
 #### ```element.scrollable``` ```[Array:[Boolean,Boolean]]```
 
-&emsp;Returns, in order, whether the element is horizontally and vertically scrollable. Note that this is only useful if ```element.scrollX``` or ```element.scrollY``` were previously set in the same object.
+&emsp;Returns, in order, whether the element is horizontally and vertically scrollable. Note that this is only useful if ```element.scrollX```[↗](#element.scrollX) or ```element.scrollY```[↗](#element.scrollY) were previously set in the same object.
 
 #### ```element.scrollable = [Array:[Boolean,Boolean]]```
 
-&emsp;Sets, in order, element's horizontal and vertical scrolling. Uses ```element.scrollX``` and ```element.scrollY``` internally.
+&emsp;Sets, in order, element's horizontal and vertical scrolling. Uses ```element.scrollX```[↗](#element.scrollX) and ```element.scrollY```[↗](#element.scrollY) internally.
 
 ### Events
 
 #### ```element.click = [Function]```
 
-&emsp;Calls function when a ```click``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```click``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.change = [Function]```
 
-&emsp;Calls function when a ```change``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```change``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.keyup = [Function]```
 
-&emsp;Calls function when a ```keyup``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```keyup``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.keydown = [Function]```
 
-&emsp;Calls function when a ```keydown``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```keydown``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.keypress = [Function]```
 
-&emsp;Calls function when a ```keypress``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```keypress``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.mousemove = [Function]```
 
-&emsp;Calls function when a ```mousemove``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```mousemove``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.mousedown = [Function]```
 
-&emsp;Calls function when a ```mousedown``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```mousedown``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.mouseup = [Function]```
 
-&emsp;Calls function when a ```mouseup``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```mouseup``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.mouseover = [Function]```
 
-&emsp;Calls function when a ```mouseover``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```mouseover``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.mouseout = [Function]```
 
-&emsp;Calls function when a ```mouseout``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when a ```mouseout``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.input = [Function]```
 
-&emsp;Calls function when an ```input``` event is generated on element. Uses ```onEvent()``` internally.
+&emsp;Calls function when an ```input``` event is generated on element. Uses ```onEvent()```[↗](https://studio.code.org/docs/ide/applab/expressions/onEvent) internally.
 
 #### ```element.dblClick = [Function]```
 
-&emsp;Calls function when two ```click``` events are generated on element. If ```elemenet``` already has a ```click``` listener, calls it two times. Uses ```element.click``` internally.
+&emsp;Calls function when two ```click``` events are generated on element. If ```element```[↗](#$[function:Function]) already has a ```click``` listener, calls it two times. Uses ```element.click```[↗](#element.click-=-[Function]) internally.
 
 #### ```element.hover = [Object]```
 
-&emsp;Applies the properties (i.e., any property covered in this documentation) present in argument when cursor hovers overs element. If parameter has a ```callback``` property, executes it with one argument Uses  ```element```, ```element.mouseover``` and ```element.mouseout``` internally.
+&emsp;Applies the properties (i.e., any property covered in this documentation) present in argument when cursor hovers overs element. If parameter has a ```callback``` property, executes it with one argument Uses  ```element```[↗](#$[function:Function]), ```element.mouseover```[↗](#element.mouseover-=-[Function]) and ```element.mouseout```[↗](#element.mouseover-=-[Function]) internally.
 
 
