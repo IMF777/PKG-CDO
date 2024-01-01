@@ -17,6 +17,8 @@ Types of properties:
 - [Image](#image)
 - [Size and position](#size-and-position)
 - [Slider properties](#slider-properties)
+- [Select elements](#select-elements)
+- [HTML and CSS](#html-and-css)
 
 ### Content
 
@@ -50,7 +52,7 @@ Types of properties:
 
 ```element.placeholder = [String]```
 
-&emsp;Sets placeholder value of input element. uses ```setProperty()``` internally
+&emsp;Sets placeholder value of input element. Uses ```setProperty()``` internally
 
 ```element.readonly```
 ```[Boolean]```
@@ -59,7 +61,7 @@ Types of properties:
 
 ```element.readonly = [String]```
 
-&emsp;Sets readonly property of textarea. uses ```setProperty()``` internally
+&emsp;Sets readonly property of textarea. Uses ```setProperty()``` internally
 
 ### Text and font
 
@@ -70,7 +72,7 @@ Types of properties:
 
 ```element.fontSize = [Number]```
 
-&emsp;Sets element font-size. uses ```setProperty()``` internally
+&emsp;Sets element font-size. Uses ```setProperty()``` internally
 
 ```element.fontFamily```
 ```[String]```
@@ -79,7 +81,7 @@ Types of properties:
 
 ```element.fontFamily = [String]```
 
-&emsp;Sets element font-family. uses ```setProperty()``` internally
+&emsp;Sets element font-family. Uses ```setProperty()``` internally
 
 ```element.textColor```
 ```[String]```
@@ -88,7 +90,7 @@ Types of properties:
 
 ```element.textColor = [String || rgb(red,green,blue)]```
 
-&emsp;Sets element text-color. uses ```setProperty()``` internally
+&emsp;Sets element text-color. Uses ```setProperty()``` internally
 
 ```element.textAlign```
 ```["left" || "right" || "center" || "justify"]```
@@ -97,12 +99,12 @@ Types of properties:
 
 ```element.textAlign = ["left" || "right" || "center" || "justify"]```
 
-&emsp;Sets element text-align. uses ```setProperty()``` internally
+&emsp;Sets element text-align. Uses ```setProperty()``` internally
 
 ### Visibility
 
 ```element.delete()```
-&emsp;Removes element from HTML document. Uses ```deleteElement()``` internally
+&emsp;Removes element from HTML document. Uses ```deleteElement()``` internally.
 
 ```element.hidden```
 ```[Boolean]```
@@ -111,7 +113,13 @@ Types of properties:
 
 ```element.hidden = [Boolean]```
 
-&emsp;Sets element hidden property. uses ```setProperty()``` internally
+&emsp;Sets element hidden property. Uses ```setProperty()``` internally
+
+```element.hide(Number?)```
+&emsp;Temporarily hides element from view, optionally after elapse of [parameter] milliseconds. Uses ```hideElement()``` and ```timedLoop()``` internally.
+
+```element.show(Number?)```
+&emsp;Brings element back to view, optionally after elapse of [parameter] milliseconds. Uses ```showElement()``` and ```timedLoop()``` internally.
 
 ### Background and border-related
 
@@ -122,7 +130,7 @@ Types of properties:
 
 ```element.backgroundColor = [String || rgb(red,green,blue)]```
 
-&emsp;Sets element background-color. uses ```setProperty()``` internally
+&emsp;Sets element background-color. Uses ```setProperty()``` internally
 
 ```element.borderColor```
 ```[String]```
@@ -131,7 +139,7 @@ Types of properties:
 
 ```element.borderColor = [String]```
 
-&emsp;Sets border-color of element. uses ```setProperty()``` internally
+&emsp;Sets border-color of element. Uses ```setProperty()``` internally
 
 ```element.borderRadius```
 ```[Number]```
@@ -140,7 +148,7 @@ Types of properties:
 
 ```element.borderRadius = [Number]```
 
-&emsp;Sets border-radius of element. uses ```setProperty()``` internally
+&emsp;Sets border-radius of element. Uses ```setProperty()``` internally
 
 ```element.borderWidth```
 ```[Number]```
@@ -149,7 +157,7 @@ Types of properties:
 
 ```element.borderWidth = [Number]```
 
-&emsp;Sets border-color of element. uses ```setProperty()``` internally
+&emsp;Sets border-color of element. Uses ```setProperty()``` internally
 
 ### Image
 
@@ -160,7 +168,7 @@ Types of properties:
 
 ```element.image = [String]```
 
-&emsp;Sets image element's image source. uses ```setProperty()``` internally
+&emsp;Sets image element's image source. Uses ```setProperty()``` internally
 
 ```element.fit```
 ```["fill" || "cover" || "contain" || "none"]```
@@ -169,7 +177,7 @@ Types of properties:
 
 ```element.fit = ["fill" || "cover" || "contain" || "none"]```
 
-&emsp;Sets image fit type. uses ```setProperty()``` internally
+&emsp;Sets image fit type. Uses ```setProperty()``` internally
 
 ```element.iconColor```
 ```[String]```
@@ -178,7 +186,7 @@ Types of properties:
 
 ```element.iconColor = [String]```
 
-&emsp;Sets image element's icon color. uses ```setProperty()``` internally
+&emsp;Sets image element's icon color. Uses ```setProperty()``` internally
 
 ### Size and position
 
@@ -189,7 +197,7 @@ Types of properties:
 
 ```element.height = [Number]```
 
-&emsp;Sets height of element. uses ```setProperty()``` internally
+&emsp;Sets height of element. Uses ```setProperty()``` internally
 
 ```element.width```
 ```[Number]```
@@ -198,7 +206,7 @@ Types of properties:
 
 ```element.width = [Number]```
 
-&emsp;Sets width of element. uses ```setProperty()``` internally
+&emsp;Sets width of element. Uses ```setProperty()``` internally
 
 ```element.size```
 ```[Array:[Number,Number]]```
@@ -207,7 +215,7 @@ Types of properties:
 
 ```element.size = [Array:[Number,Number]]```
 
-&emsp;Sets element height to array item 0 and width to array item 1. uses ```setProperty()``` internally
+&emsp;Sets element height to array item 0 and width to array item 1. Uses ```setProperty()``` internally
 
 ```element.x```
 ```[Number]```
@@ -216,7 +224,7 @@ Types of properties:
 
 ```element.x = [Number]```
 
-&emsp;Sets x position of element. uses ```setProperty()``` internally
+&emsp;Sets x position of element. Uses ```setProperty()``` internally
 
 ```element.y```
 ```[Number]```
@@ -225,7 +233,7 @@ Types of properties:
 
 ```element.y = [Number]```
 
-&emsp;Sets y position of element. uses ```setProperty()``` internally
+&emsp;Sets y position of element. Uses ```setProperty()``` internally
 
 ```element.position```
 ```[Array:[Number,Number]]```
@@ -234,7 +242,7 @@ Types of properties:
 
 ```element.position = [Array:[Number,Number]]```
 
-&emsp;Sets element x position to array item 0 and y position to array item 1. uses ```setProperty()``` internally
+&emsp;Sets element x position to array item 0 and y position to array item 1. Uses ```setProperty()``` internally
 
 ### Slider properties
 
@@ -245,7 +253,7 @@ Types of properties:
 
 ```element.value = [Number]```
 
-&emsp;Sets numeric value of slider. uses ```setProperty()``` internally
+&emsp;Sets numeric value of slider. Uses ```setProperty()``` internally
 
 ```element.min```
 ```[Number]```
@@ -254,7 +262,7 @@ Types of properties:
 
 ```element.min = [Number]```
 
-&emsp;Sets min of slider. uses ```setProperty()``` internally
+&emsp;Sets min of slider. Uses ```setProperty()``` internally
 
 ```element.max```
 ```[Number]```
@@ -263,7 +271,7 @@ Types of properties:
 
 ```element.max = [Array]```
 
-&emsp;Sets max value of slider. uses ```setProperty()``` internally
+&emsp;Sets max value of slider. Uses ```setProperty()``` internally
 
 ```element.range```
 ```[Array:[Number,Number]]```
@@ -272,7 +280,7 @@ Types of properties:
 
 ```element.range = [Array:[Number,Number]]```
 
-&emsp;Sets slider min to array item 0 and max to array item 1. uses ```setProperty()``` internally
+&emsp;Sets slider min to array item 0 and max to array item 1. Uses ```setProperty()``` internally
 
 ```element.step```
 ```[Number]```
@@ -281,7 +289,7 @@ Types of properties:
 
 ```element.step = [Number]```
 
-&emsp;Sets step property of slider. uses ```setProperty()``` internally
+&emsp;Sets step property of slider. Uses ```setProperty()``` internally
 
 ### Select elements
 
@@ -292,7 +300,7 @@ Types of properties:
 
 ```element.groupId = [String]```
 
-&emsp;Sets group-id of radio button. uses ```setProperty()``` internally
+&emsp;Sets group-id of radio button. Uses ```setProperty()``` internally
 
 ```element.checked```
 ```[Boolean]```
@@ -301,7 +309,7 @@ Types of properties:
 
 ```element.checked = [Boolean]```
 
-&emsp;Sets checked property of radio button or checkbox. uses ```setProperty()``` internally
+&emsp;Sets checked property of radio button or checkbox. Uses ```setProperty()``` internally
 
 ```element.options```
 ```[Array:String[]]```
@@ -310,7 +318,7 @@ Types of properties:
 
 ```element.options = [Array:String[]]```
 
-&emsp;Sets options property of dropdown. uses ```setProperty()``` internally
+&emsp;Sets options property of dropdown. Uses ```setProperty()``` internally
 
 ```element.index```
 ```[Number]```
@@ -319,22 +327,39 @@ Types of properties:
 
 ```element.index = [Number]```
 
-&emsp;Sets dropdown index. uses ```setProperty()``` internally
+&emsp;Sets dropdown index. Uses ```setProperty()``` internally
 
 ### HTML and CSS
 
 ```element.html = [String]```
 
-&emsp;Sets element's innerHTML to provided string. uses ```innerHTML()``` internally
+&emsp;Sets element's innerHTML to provided string. Uses ```innerHTML()``` internally. Only setter.
 
 ```element.CSS = [String]```
 
-&emsp;Sets CSS styling of element to provided string. uses ```setStyle()``` internally
+&emsp;Sets CSS styling of element to provided string. Uses ```setStyle()``` internally. Only setter.
 
 ```element.parent = [String]```
 
-&emsp;Appends element to the element with the matching id. uses ```setParent()``` internally
+&emsp;Appends element to the element with the matching id. Uses ```setParent()``` internally. Only setter.
 
-```element.children = [String]```
+```element.children = [String || Array:String[]]```
 
-&emsp;Appends element with the matching id to the element. uses ```setParent()``` internally
+&emsp;Appends element with the matching id to element. [>=1.1.0] If argument provided is of type array, loops through array items and appends element with id of each item to element. Uses ```setParent()``` internally. Only setter.
+
+```element.scrollX = [Boolean]```
+
+&emsp;Enables or disables horizontal scrolling for element. Uses ```setStyle()``` internally. Only setter.
+
+```element.scrollY = [Boolean]```
+
+&emsp;Enables or disables vertical scrolling for element. Uses ```setStyle()``` internally. Only setter.
+
+```element.scrollable```
+```[Array:[Boolean,Boolean]]```
+
+&emsp;Returns, in order, whether the element is horizontally and vertically scrollable. Note that this is only useful if ```element.scrollX``` or ```element.scrollY``` were previously set in the same object.
+
+```element.scrollable = [Array:[Boolean,Boolean]]```
+
+&emsp;Sets, in order, element's horizontal and vertical scrolling. Uses ```element.scrollX``` and ```element.scrollY``` internally.
