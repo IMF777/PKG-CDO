@@ -430,11 +430,11 @@ Types of properties:
 
 ### Moving animation
 
-#### ```element.moveX(Number, Function?)``` [❕ <1.2.0 ```element.velocityX``` ❕]
+#### ```element.moveX(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityX``` ❗🟥
 
 &emsp;Dynamically moves element to x position specified in first argument with animation. Accepts a callback as optional second parameter, which will be called once element reaches target x position. Internally uses a ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop), and ```element.speedX```[↗](#moving-animation) and ```element.rateX```[↗](#moving-animation) properties.
 
-#### ```element.moveY(Number, Function?)``` [❕ <1.2.0 ```element.velocityY``` ❕]
+#### ```element.moveY(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityY``` ❗🟥
 
 &emsp;Dynamically moves element to y position specified in first argument with animation. Accepts a callback as optional second parameter, which will be called once element reaches target y position. Internally uses a ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop), and ```element.speedY```[↗](#moving-animation) and ```element.rateY```[↗](#moving-animation) properties.
 
