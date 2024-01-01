@@ -21,6 +21,7 @@ Types of properties:
 - [Select elements](#select-elements)
 - [HTML and CSS](#html-and-css)
 - [Events](#events)
+- [Moving animation](#moving-animation)
 
 ### Content
 
@@ -109,11 +110,11 @@ Types of properties:
 
 #### ```element.hide(Number?)```
 
-&emsp;Temporarily hides element from view, optionally after elapse of [parameter] milliseconds. Uses ```hideElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/hideElement) and ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) internally.
+&emsp;Temporarily hides element from view, optionally after elapse of [parameter] milliseconds. Uses ```hideElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/hideElement) and ```setTimeout()```[↗](https://studio.code.org/docs/ide/applab/expressions/setTimeout) internally.
 
 #### ```element.show(Number?)```
 
-&emsp;Brings element back to view, optionally after elapse of [parameter] milliseconds. Uses ```showElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/showElement) and ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) internally.
+&emsp;Brings element back to view, optionally after elapse of [parameter] milliseconds. Uses ```showElement()```[↗](https://studio.code.org/docs/ide/applab/expressions/showElement) and ```setTimeout()```[↗](https://studio.code.org/docs/ide/applab/expressions/setTimeout) internally.
 
 ### Background and border
 
@@ -426,3 +427,29 @@ Types of properties:
 #### ```element.drop``` ```[Function]```
 
 &emsp;Called when a draggable element is dropped. Defaults to ```function(){}```.
+
+### Moving animation
+
+#### ```element.moveX(Number, Function?)``` [❕ <1.2.0 ```element.velocityX``` ❕]
+
+&emsp;Dynamically moves element to x position specified in first argument with animation. Accepts a callback as optional second parameter, which will be called once element reaches target x position. Internally uses a ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop), and ```element.speedX```[↗](#moving-animation) and ```element.rateX```[↗](#moving-animation) properties.
+
+#### ```element.moveY(Number, Function?)``` [❕ <1.2.0 ```element.velocityY``` ❕]
+
+&emsp;Dynamically moves element to y position specified in first argument with animation. Accepts a callback as optional second parameter, which will be called once element reaches target y position. Internally uses a ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop), and ```element.speedY```[↗](#moving-animation) and ```element.rateY```[↗](#moving-animation) properties.
+
+#### ```element.speedX``` ```[Number]```
+
+&emsp;Given to ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) milliseconds parameter as argument when ```element.moveX()```[↗](#moving-animation) is called. Defaults to 10. Increasing this property will potentially affect smoothness of animation.
+
+#### ```element.speedY``` ```[Number]```
+
+&emsp;Given to ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) milliseconds parameter as argument when ```element.moveY()```[↗](#moving-animation) is called. Defaults to 10. Increasing this property will potentially affect smoothness of animation.
+
+#### ```element.rateX``` ```[Number]```
+
+&emsp;The number of pixels to increment (or decrement if first argument to ```element.moveX()```[↗](#moving-animation) is negative) each [```element.speedX```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to 1. Increasing this property will potentially affect smoothness of animation.
+
+#### ```element.rateY``` ```[Number]```
+
+&emsp;The number of pixels to increment (or decrement, if first argument to ```element.moveY()```[↗](#moving-animation) is negative) each [```element.speedYA```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to 1. Increasing this property will potentially affect smoothness of animation.
