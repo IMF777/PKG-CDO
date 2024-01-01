@@ -2,7 +2,8 @@
 
 Sem is a UI library for modifying on-screen elements with profound ease. Access or modify elements as if they were JavaScript objects. Sem includes two main functions: ```$```[↗](#$) and ```Template```[↗](#template).
 
-## ```$``` ```[function:Function]```
+## ```$```
+```[function:Function]```
 
 ```var element = $(id);```
 ```[Object]```
@@ -454,5 +455,6 @@ Property types:
 
 &emsp;The number of pixels to increment (or decrement, if first argument to ```element.moveY()```[↗](#moving-animation) is negative) each [```element.speedYA```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to 1. Increasing this property will potentially affect smoothness of animation.
 
-## ```Template``` ```[function:Function]```
+## ```Template```
+```[function:Function]```
 
