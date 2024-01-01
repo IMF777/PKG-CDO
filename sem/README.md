@@ -1,4 +1,4 @@
-# Sem
+# Sem Documentation
 
 Sem is a UI library for modifying on-screen elements with profound ease. Access or modify elements as if they were JavaScript objects. Sem includes two main functions: ```$``` and ```Template```.
 
@@ -363,3 +363,59 @@ Types of properties:
 ```element.scrollable = [Array:[Boolean,Boolean]]```
 
 &emsp;Sets, in order, element's horizontal and vertical scrolling. Uses ```element.scrollX``` and ```element.scrollY``` internally.
+
+### Events
+
+```element.click = [Function]```
+
+&emsp;Calls function when a ```click``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.change = [Function]```
+
+&emsp;Calls function when a ```change``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.keyup = [Function]```
+
+&emsp;Calls function when a ```keyup``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.keydown = [Function]```
+
+&emsp;Calls function when a ```keydown``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.keypress = [Function]```
+
+&emsp;Calls function when a ```keypress``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.mousemove = [Function]```
+
+&emsp;Calls function when a ```mousemove``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.mousedown = [Function]```
+
+&emsp;Calls function when a ```mousedown``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.mouseup = [Function]```
+
+&emsp;Calls function when a ```mouseup``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.mouseover = [Function]```
+
+&emsp;Calls function when a ```mouseover``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.mouseout = [Function]```
+
+&emsp;Calls function when a ```mouseout``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.input = [Function]```
+
+&emsp;Calls function when an ```input``` event is generated on element. Uses ```onEvent()``` internally.
+
+```element.dblClick = [Function]```
+
+&emsp;Calls function when two ```click``` events are generated on element. If ```elemenet``` already has a ```click``` listener, calls it two times. Uses ```element.click``` internally.
+
+```element.hover = [Object]```
+
+&emsp;Applies the properties present in parameter when cursor hovers overs element. Uses  ```element```, ```element.mouseover``` and ```element.mouseout``` internally.
+
+
