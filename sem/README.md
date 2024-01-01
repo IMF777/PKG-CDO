@@ -386,6 +386,12 @@ Types of properties:
 
 #### ```element.hover = [Object]```
 
-&emsp;Applies the properties (i.e., any property covered in this documentation) present in argument when cursor hovers overs element. If parameter has a ```callback``` property, executes it with one argument Uses  ```element```[↗](#sem-documentation), ```element.mouseover```[↗](#events) and ```element.mouseout```[↗](#events) internally.
+&emsp;Applies the properties (i.e., any property covered in this documentation) present in argument when cursor hovers overs element. If parameter has a ```callback``` property, executes it with one argument. Uses ```element.mouseover```[↗](#events) and ```element.mouseout```[↗](#events) internally.
 
+#### ```element.drag = [String]```
 
+&emsp;Makes element scrollable across element with id provided. Set to false to disable scrolling. Calls ```element.drop```[↗](#events) after element is dropped. Uses ```element.mouseover```[↗](#events) and ```element.mouseout```[↗](#events) internally.
+
+#### ```element.drop``` ```[Function]```
+
+&emsp;Called when a draggable element is dropped. Defaults to ```function(){}```.
