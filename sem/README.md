@@ -16,6 +16,7 @@ Types of properties:
 - [Background and border](#background-and-border)
 - [Image](#image)
 - [Size and position](#size-and-position)
+- [Horizontal and vertical align](#horizontal-and-vertical-align)
 - [Slider properties](#slider-properties)
 - [Select elements](#select-elements)
 - [HTML and CSS](#html-and-css)
