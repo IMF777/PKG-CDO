@@ -224,6 +224,36 @@ Types of properties:
 
 &emsp;Sets element x position to array item 0 and y position to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
+#### ```element.collides(String, Number?)``` ```[Boolean]```
+
+&emsp;Returns whether element intersects with element matching id given as argument. Accepts an offset as optional second parameter. Note that this method only checks for box collision. Internally uses factors such as both elements' size and position to determine whether they intersect.
+
+### Horizontal and vertical align
+
+#### ```element.alignX("left" || "center" || "right", Number?)```
+
+&emsp;Horizontally aligns element to left, right, or center of the screen. Accepts an offset as optional second parameter. Internally uses factors such as element and screen size to determine new position.
+
+#### ```element.alignY("top" || "center" || "bottom", Number?)```
+
+&emsp;Vertically aligns element to top, bottom, or center of the screen. Accepts an offset as optional second parameter. Internally uses factors such as element and screen size to determine new position.
+
+#### ```element.align(String, Number?, Number?)```
+
+&emsp;Aligns element to a certain position on screen based on first argument. The argument must be a compound of horizontal and vertical align ("top-left", "right-center", "bottom-right" etc.) in whichever order, or "center". Accepts two optional arguments: an x offset and y offset. Internally uses factors such as element and screen size to determine new position.
+
+#### ```element.alignParentX(String, "left" || "center" || "right", Number?)```
+
+&emsp;Appends element to element with id specified in first parameter and horizontally aligns element to left, right, or center of parent. Accepts an offset as optional second parameter. Internally uses factors such as elements' size to determine new position.
+
+#### ```element.alignParentY(String, "top" || "center" || "bottom", Number?)```
+
+&emsp;Appends element to element with id specified in first parameter and vertically aligns element to top, bottom, or center of parent. Accepts an offset as optional second parameter. Internally uses factors such as elements' size to determine new position.
+
+#### ```element.alignParent(String, String, Number?, Number?)```
+
+&emsp;Appends element to element with id specified in first parameter and aligns element to a certain position on parent based on second argument. The argument must be a compound of horizontal and vertical align ("top-left", "right-center", "bottom-right" etc.) in whichever order, or "center". Accepts two optional arguments: an x offset and y offset. Internally uses factors such as elements' size to determine new position.
+
 ### Slider properties
 
 #### ```element.value``` ```[Number]```
