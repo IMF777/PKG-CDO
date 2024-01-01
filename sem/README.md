@@ -328,11 +328,11 @@ Types of properties:
 
 #### ```element.scrollable``` ```[Array:[Boolean,Boolean]]```
 
-&emsp;Returns, in order, whether the element is horizontally and vertically scrollable. Note that this is only useful if ```element.scrollX```[↗](#element.scrollX) or ```element.scrollY```[↗](#element.scrollY) were previously set in the same object.
+&emsp;Returns, in order, whether the element is horizontally and vertically scrollable. Note that this is only useful if ```element.scrollX```[↗](#html-and-css) or ```element.scrollY```[↗](#html-and-css) were previously set in the same object.
 
 #### ```element.scrollable = [Array:[Boolean,Boolean]]```
 
-&emsp;Sets, in order, element's horizontal and vertical scrolling. Uses ```element.scrollX```[↗](#element.scrollX) and ```element.scrollY```[↗](#element.scrollY) internally.
+&emsp;Sets, in order, element's horizontal and vertical scrolling. Uses ```element.scrollX```[↗](#html-and-css) and ```element.scrollY```[↗](#html-and-css) internally.
 
 ### Events
 
@@ -382,10 +382,10 @@ Types of properties:
 
 #### ```element.dblClick = [Function]```
 
-&emsp;Calls function when two ```click``` events are generated on element. If ```element```[↗](#$[function:Function]) already has a ```click``` listener, calls it two times. Uses ```element.click```[↗](#element.click-=-[Function]) internally.
+&emsp;Calls function when two ```click``` events are generated on element. If ```element```[↗](#sem-documentation) already has a ```click``` listener, calls it two times. Uses ```element.click```[↗](#events) internally.
 
 #### ```element.hover = [Object]```
 
-&emsp;Applies the properties (i.e., any property covered in this documentation) present in argument when cursor hovers overs element. If parameter has a ```callback``` property, executes it with one argument Uses  ```element```[↗](#$[function:Function]), ```element.mouseover```[↗](#element.mouseover-=-[Function]) and ```element.mouseout```[↗](#element.mouseover-=-[Function]) internally.
+&emsp;Applies the properties (i.e., any property covered in this documentation) present in argument when cursor hovers overs element. If parameter has a ```callback``` property, executes it with one argument Uses  ```element```[↗](#sem-documentation), ```element.mouseover```[↗](#events) and ```element.mouseout```[↗](#events) internally.
 
 
