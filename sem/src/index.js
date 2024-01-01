@@ -598,7 +598,7 @@
 				speedX: 1,
 				rateY: 10,
 				speedY: 1,
-				velocityX: function (e, t)
+				moveX: function (e, t)
 				{
 					var r = 0,
 						o = timedLoop(c.rateX, function ()
@@ -606,7 +606,7 @@
 							0 < e ? (r += c.speedX, c.x += c.speedX, e <= r && (stopTimedLoop(o), t && t())) : (r -= c.speedX, c.x -= c.speedX, r <= e && (stopTimedLoop(o), t && t()))
 						})
 				},
-				velocityY: function (e, t)
+				moveY: function (e, t)
 				{
 					var r = 0,
 						o = timedLoop(c.rateY, function ()
