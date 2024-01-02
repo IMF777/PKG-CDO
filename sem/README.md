@@ -349,7 +349,7 @@ Property types:
 
 #### ```set``` | ```element.children = [String || Array:String[]]```
 
-&emsp;Appends element with the matching id to element. [>=1.1.0] If argument provided is of type array, loops through array items and appends element with id of each item to element. Uses ```setParent()```[Not documented] internally. Only setter.
+&emsp;Appends element with the matching id to element. 🟥❗ >=1.1.0 ❗🟥 If argument provided is of type array, loops through array items and appends element with id of each item to element. Uses ```setParent()```[Not documented] internally. Only setter.
 
 #### ```set``` | ```element.scrollX = [Boolean]```
 
