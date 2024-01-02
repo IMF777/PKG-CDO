@@ -483,9 +483,9 @@ Constructor function. Expects one parameter: an object with element properties, 
 
 &emsp;Object holding all properties in object passed on to ```Template()```[↗](#template) as argument, and their values, allowing the values to be updated.
 
-##### ```property``` | ```template.props.callback(Object)``` | ```[Function]```
+&emsp;```property``` | ```template.props.callback(Object)``` | ```[Function]```
 
-&emsp;Called once for each element given as argument for ```template.Apply()```[↗](#template), with a ```$()```[↗](#sem-documentation) object of the element with the corresponding id as argumemt.
+&emsp;Called once for each element given as argument for ```template.Apply()```[↗](#template), with a ```$()```[↗](#sem-documentation) object of the element with the corresponding id as argument.
 
 #### ```method``` | ```template.Apply(String[])```
 
