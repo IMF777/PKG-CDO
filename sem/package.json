@@ -1,7 +1,7 @@
 {
   "name":"sem",
   "description":"UI library used to get or set an element's properties.",
-  "version":"1.1.0",
+  "version":"1.2.0",
   "author":"ismailmf777",
   "keywords":["UI","element","design","layout","$","Template"],
   "license":"MIT"
