@@ -201,7 +201,7 @@ Property types:
 
 #### ```set``` | ```element.size = [Array:[Number,Number]]```
 
-&emsp;Sets element height to array item 0 and width to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
+&emsp;Sets element height to array item ```0``` and width to array item ```1```. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```get``` | ```element.x``` ```[Number]```
 
@@ -225,7 +225,23 @@ Property types:
 
 #### ```set``` | ```element.position = [Array:[Number,Number]]```
 
-&emsp;Sets element x position to array item 0 and y position to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
+&emsp;Sets element x position to array item ```0``` and y position to array item ```1```. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally.
+
+#### ```property``` | ```element.minX```
+
+&emsp;When property is not ```false```, restricts element from having an x position lower than its value. Use with ```element.maxX``` to confine element in a certain range on the x axis. Defaults to ```false```.
+
+#### ```property``` | ```element.maxX```
+
+&emsp;When property is not ```false```, restricts element from having an x position higher than its value. Use with ```element.minX``` to confine element in a certain range on the x axis. Defaults to ```false```.
+
+#### ```property``` | ```element.minY```
+
+&emsp;When property is not ```false```, restricts element from having an y position lower than its value. Use with ```element.maxY``` to confine element in a certain range on the y axis. Defaults to ```false```.
+
+#### ```property``` | ```element.maxY```
+
+&emsp;When property is not ```false```, restricts element from having an y position lower than its value. Use with ```element.minY``` to confine element in a certain range on the y axis. Defaults to ```false```.
 
 #### ```method``` | ```element.collides(String, Number?)``` ```[Boolean]```
 
@@ -289,7 +305,7 @@ Property types:
 
 #### ```set``` | ```element.range = [Array:[Number,Number]]```
 
-&emsp;Sets slider min to array item 0 and max to array item 1. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
+&emsp;Sets slider min to array item ```0``` and max to array item ```1```. Uses ```setProperty()```[↗](https://studio.code.org/docs/ide/applab/expressions/setProperty) internally
 
 #### ```get``` | ```element.step``` ```[Number]```
 
@@ -431,29 +447,29 @@ Property types:
 
 ### Moving animation
 
-#### ```method``` | ```element.moveX(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityX``` ❗🟥
+#### ```method``` | ```element.moveX(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityX(Number, Function?)``` ❗🟥
 
 &emsp;Dynamically moves element to x position specified in first argument with animation. Accepts a callback as optional second parameter, which will be called once element reaches target x position. Internally uses a ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop), and ```element.speedX```[↗](#moving-animation) and ```element.rateX```[↗](#moving-animation) properties.
 
-#### ```method``` | ```element.moveY(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityY``` ❗🟥
+#### ```method``` | ```element.moveY(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityY(Number, Function?)``` ❗🟥
 
 &emsp;Dynamically moves element to y position specified in first argument with animation. Accepts a callback as optional second parameter, which will be called once element reaches target y position. Internally uses a ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop), and ```element.speedY```[↗](#moving-animation) and ```element.rateY```[↗](#moving-animation) properties.
 
 #### ```property``` | ```element.speedX``` ```[Number]```
 
-&emsp;Given to ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) milliseconds parameter as argument when ```element.moveX()```[↗](#moving-animation) is called. Defaults to 10. Increasing this property will potentially affect smoothness of animation.
+&emsp;Given to ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) milliseconds parameter as argument when ```element.moveX()```[↗](#moving-animation) is called. Defaults to ```10```. Increasing this property will potentially affect smoothness of animation.
 
 #### ```property``` | ```element.speedY``` ```[Number]```
 
-&emsp;Given to ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) milliseconds parameter as argument when ```element.moveY()```[↗](#moving-animation) is called. Defaults to 10. Increasing this property will potentially affect smoothness of animation.
+&emsp;Given to ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop) milliseconds parameter as argument when ```element.moveY()```[↗](#moving-animation) is called. Defaults to ```10```. Increasing this property will potentially affect smoothness of animation.
 
 #### ```property``` | ```element.rateX``` ```[Number]```
 
-&emsp;The number of pixels to increment (or decrement if first argument to ```element.moveX()```[↗](#moving-animation) is negative) each [```element.speedX```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to 1. Increasing this property will potentially affect smoothness of animation.
+&emsp;The number of pixels to increment (or decrement if first argument to ```element.moveX()```[↗](#moving-animation) is negative) each [```element.speedX```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to ```1```. Increasing this property will potentially affect smoothness of animation.
 
 #### ```property``` | ```element.rateY``` ```[Number]```
 
-&emsp;The number of pixels to increment (or decrement, if first argument to ```element.moveY()```[↗](#moving-animation) is negative) each [```element.speedYA```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to 1. Increasing this property will potentially affect smoothness of animation.
+&emsp;The number of pixels to increment (or decrement, if first argument to ```element.moveY()```[↗](#moving-animation) is negative) each [```element.speedYA```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to ```1```. Increasing this property will potentially affect smoothness of animation.
 
 ## ```Template```
 ```[function:Function]```
