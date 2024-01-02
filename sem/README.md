@@ -1,16 +1,17 @@
 # Sem Documentation
 
-Sem is a UI library for modifying on-screen elements with profound ease. Access or modify elements as if they were JavaScript objects. Sem includes two main functions: ```$```[↗](#$) and ```Template```[↗](#template).
+Sem is a small, compact UI library for modifying on-screen elements with profound ease. Access or modify elements as if they were JavaScript objects. Sem includes two main functions: ```$```[↗](#$) and ```Template```[↗](#template).
 
-## ```$```
-```[function:Function]```
+> ## ```$```
+> ```[function:Function]```
+
+Expects one parameter: the id of the target element. Returns an object with multiple getters, setters, properties and methods associated with the element's content, design and layout. This includes element text, value, and design-associated properties like background-color, border, font-size and more.
 
 ```var element = $(id);```
 ```[Object]```
 
-Expects one parameter: the id of the target element. Returns an object with multiple getters, setters, properties and methods associated with the element's content, design and layout. This includes element text, value, and design-associated properties like background-color, border, font-size and more.
+## Property types:
 
-Property types:
 - [Content](#content)
 - [Text and font](#text-and-font)
 - [Visibility](#visibility)
@@ -471,6 +472,21 @@ Property types:
 
 &emsp;The number of pixels to increment (or decrement, if first argument to ```element.moveY()```[↗](#moving-animation) is negative) each [```element.speedYA```[↗](#moving-animation)] milliseconds during the ```timedLoop()```[↗](https://studio.code.org/docs/ide/applab/expressions/timedLoop). Defaults to ```1```. Increasing this property will potentially affect smoothness of animation.
 
-## ```Template```
-```[function:Function]```
+> ## ```Template```
+> ```[function:Function]```
 
+Constructor function. Expects one parameter: an object with element properties, an an optional property ```callback```[↗](#template). Resultant object has one property ```this.props```[↗](#template) and one method ```this.Apply()```[↗](#template).
+
+```var template = new Template(Object)```
+
+#### ```property``` | ```template.props``` | ```[Object]```
+
+&emsp;Object holding all properties in object passed on to ```Template()```[↗](#template) as argument, and their values, allowing the values to be updated.
+
+##### ```property``` | ```template.props.callback(Object)``` | ```[Function]```
+
+&emsp;Called once for each element given as argument for ```template.Apply()```[↗](#template), with a ```$()```[↗](#sem-documentation) object of the element with the corresponding id as argumemt.
+
+#### ```method``` | ```template.Apply(String[])```
+
+&emsp;Applies properties in ```this.props```[↗](#template) to all elements with ids given as arguments.
