@@ -23,7 +23,7 @@ Expects one parameter: the id of the target element. Returns an object with mult
 - [Select elements](#select-elements)
 - [HTML and CSS](#html-and-css)
 - [Events](#events)
-- [Moving animation](#moving-animation)
+- [Move with animation](#move-with-animation)
 
 ### Content
 
@@ -446,7 +446,7 @@ Expects one parameter: the id of the target element. Returns an object with mult
 
 &emsp;Called when a draggable element is dropped. Defaults to ```function(){}```.
 
-### Moving animation
+### Move with animation
 
 #### ```method``` | ```element.moveX(Number, Function?)``` 🟥❗ <1.2.0 ```element.velocityX(Number, Function?)``` ❗🟥
 
